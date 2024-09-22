@@ -1,0 +1,71 @@
+    @font-face {
+        font-family: 'HouseDecorDemoRegular';
+        src: url('../fonts/HouseOfGlory-1GraB.ttf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    * {
+        font-family: 'HouseDecorDemoRegular';
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    .nav_icon {
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 1rem;
+    }
+    
+    .nav_icon img {
+        width: 43%;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        translate: -21% -50%;
+    }
+    
+    #wrape_document {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        border: 1px solid black;
+    }
+    
+    .con_All {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+    }
+    
+    .title_fir_form {
+        font-weight: 600;
+        font-size: 22px;
+    }
+    
+    .all_donr_f {
+        margin-top: 18px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    
+    .apply_now1 {
+        margin-top: 54px;
+        border: none;
+        padding: 0.4rem 1rem;
+        object-fit: cover;
+        background-color: darkblue;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+    }
