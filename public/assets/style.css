@@ -14,7 +14,7 @@
     
     .nav_icon {
         width: 100%;
-        height: 50px;
+        height: 103px;
         position: fixed;
         top: 0;
         left: 0;
@@ -23,13 +23,15 @@
         justify-content: space-between;
         align-items: center;
         padding: 1.5rem 1rem;
+        z-index: 999;
+        background: white;
     }
     
     .nav_icon img {
         width: 43%;
         position: absolute;
         left: 0;
-        top: 100%;
+        top: 50%;
         translate: -21% -50%;
     }
     
@@ -44,8 +46,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100%;
+        height: 100vh;
         flex-direction: column;
+        transition: all 1s;
+        position: relative;
+        transform: translateY(-00%);
     }
     
     .title_fir_form {
@@ -60,12 +65,82 @@
     }
     
     .apply_now1 {
-        margin-top: 54px;
+        position: absolute;
+        bottom: 18px;
+        width: 89%;
+        left: 50%;
+        translate: -50%;
+        height: 43px;
         border: none;
-        padding: 0.4rem 1rem;
-        object-fit: cover;
         background-color: darkblue;
         color: white;
-        text-align: center;
-        border-radius: 5px;
+        border-radius: 6px;
+        transition: 0.3 all linear;
+        text-decoration: none;
     }
+    
+    .apply_now1:active {
+        transition: 0.3 all linear;
+        transform: scale(0.9);
+    }
+    
+    .clock_Appllly {
+        text-decoration: none;
+        color: darkblue;
+        position: absolute;
+        bottom: 68px;
+        left: 50%;
+        translate: -50%;
+    }
+    
+    .clock_Appllly i {
+        color: black;
+    }
+    
+    .ping {
+        --uib-size: 50px;
+        --uib-speed: 1s;
+        --uib-color: #ffffff;
+        position: relative;
+        height: var(--uib-size);
+        width: var(--uib-size);
+    }
+    
+    .ping::before,
+    .ping::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        background-color: var(--uib-color);
+        animation: pulse7132 var(--uib-speed) linear infinite;
+        transform: scale(0);
+        opacity: 0;
+    }
+    
+    .ping::after {
+        animation-delay: calc(var(--uib-speed) / -2);
+    }
+    
+    @keyframes pulse7132 {
+        0% {
+            transform: scale(0);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 0;
+        }
+    }
+    
+    #first_spin {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        translate: -50% -50%;
+    }
+    
+    .con_All_second {}
